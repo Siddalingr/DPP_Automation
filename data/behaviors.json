@@ -1,15 +1,14 @@
 {
   "uid" : "b1a8273437954620fa374b796ffaacdd",
-  "name" : "behaviors",
   "children" : [ {
     "name" : "User should be able to load url",
-    "uid" : "4f2a5e581735d8f",
+    "uid" : "dc4ed6639f98d2f5",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1670236872697,
-      "stop" : 1670236879898,
-      "duration" : 7201
+      "start" : 1675240519132,
+      "stop" : 1675240521467,
+      "duration" : 2335
     },
     "flaky" : false,
     "newFailed" : false,
@@ -17,23 +16,7 @@
     "newBroken" : false,
     "retriesCount" : 0,
     "retriesStatusChange" : false,
-    "parameters" : [ "chrome-108.0.5359.72" ]
-  }, {
-    "name" : "User should be able to click Holiday icon",
-    "uid" : "a0498e00c9729784",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1670236879899,
-      "stop" : 1670236880381,
-      "duration" : 482
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 0,
-    "retriesStatusChange" : false,
-    "parameters" : [ "chrome-108.0.5359.72" ]
-  } ]
+    "parameters" : [ "chrome-109.0.5414.74" ]
+  } ],
+  "name" : "behaviors"
 }
