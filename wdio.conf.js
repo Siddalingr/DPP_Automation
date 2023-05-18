@@ -260,9 +260,9 @@ args:[
   /**
    * Function to be executed before a test (in Mocha/Jasmine) starts.
    */
-  // beforeTest: async function (test, context) {
-  //   apiCalls = await browser.mock("**");
-  // },
+  beforeTest: async function (test, context) {
+  apiCalls = await browser.mock("**");
+   },
   /**
    * Hook that gets executed _before_ a hook within the suite starts (e.g. runs before calling
    * beforeEach in Mocha)
@@ -295,13 +295,13 @@ args:[
     
 
     // To capture all API logs
-    // Object.keys(apiCalls.calls).forEach(function (key) {
-    //   let logInfo = `URL  : ${apiCalls.calls[key].url}\n Method : ${apiCalls.calls[key].method}\n StatusCode  : ${apiCalls.calls[key].statusCode}`; // customize log required info
-    //   allureReporter.addAttachment(
-    //     `${apiCalls.calls[key].method} : ${apiCalls.calls[key].url}`,
-    //     `${logInfo}`
-    //   ); // Attach the API logs into allure reporter
-    // });
+    Object.keys(apiCalls.calls).forEach(function (key) {
+      let logInfo = `URL  : ${apiCalls.calls[key].url}\n Method : ${apiCalls.calls[key].method}\n StatusCode  : ${apiCalls.calls[key].statusCode}`; // customize log required info
+      allureReporter.addAttachment(
+        `${apiCalls.calls[key].method} : ${apiCalls.calls[key].url}`,
+        `${logInfo}`
+      ); // Attach the API logs into allure reporter
+    });
   },
 
   /**
