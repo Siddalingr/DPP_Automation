@@ -12,7 +12,7 @@ jobs:
         runs-on: ubuntu-latest
         env:
             JOB_NAME: Test
-        name: SOC1 Tests - ${{ github.event.inputs.choice }}
+        name: ui_framework - ${{ github.event.inputs.choice }}
         steps:
             - uses: actions/checkout@v3
             - name: Use Node.js
