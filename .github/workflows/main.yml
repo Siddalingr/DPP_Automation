@@ -23,7 +23,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - name: install chromedriver latest version
-      run: npm i chromedriver@112 --save -dev
+      run: npm i chromedriver@113 --save -dev
     - run: npm ci
     - run: npm run build --if-present
     - run: npm run makeMyTrip
