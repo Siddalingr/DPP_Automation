@@ -21,7 +21,7 @@
 	"scripts": {
 		"allureCombine": "node ./node_modules/allure-single-html-file-js/combine.js ./test/.artifacts/allure-report",
 		"test": "wdio run wdio.conf.js",
-		"full_suite": "wdio run wdio.conf.js --suite full_suite"
+		"full_suite": "wdio run wdio.conf.js --suite full_suite",
 		"testEdge": "wdio run edge_config.js",
 		"openReport": "allure open test/.artifacts/allure-report"
 	},
