@@ -1,5 +1,5 @@
-let apiCalls;
-const logToFile = require("log-to-file");
+//let apiCalls;
+//const logToFile = require("log-to-file");
 const allureReporter = require("@wdio/allure-reporter").default;
 const allure = require("allure-commandline");
 const fs = require("fs");
@@ -268,7 +268,7 @@ args:[
    * Function to be executed before a test (in Mocha/Jasmine) starts.
    */
   beforeTest: async function (test, context) {
-  apiCalls = await browser.mock("**");
+  //apiCalls = await browser.mock("**");
    },
   /**
    * Hook that gets executed _before_ a hook within the suite starts (e.g. runs before calling
