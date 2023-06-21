@@ -19,7 +19,7 @@ jobs:
 
       - name: Start LambdaTest Tunnel
         id: tunnel
-        uses: LambdaTest/LambdaTest-tunnel-action@v1 # Uses an action in the root directory
+        uses: LambdaTest/LambdaTest-tunnel-action@v1
         with:
           user: LT_EMAIL
           accessKey: Royal_7075
@@ -28,7 +28,7 @@ jobs:
       - name: Run Test Case
         env:
           username: LT_USERNAME
-          accessKey: Mavens_7075
+          accessKey: Royal_7075
           tunnelName: "test tunnel"
 
         run: npm run test
