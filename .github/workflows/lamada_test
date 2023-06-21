@@ -1,6 +1,7 @@
 name: Test Tunnel
 
-on: push
+on:
+    workflow_dispatch:
 
 jobs:
   test-tunnel:
@@ -30,7 +31,7 @@ jobs:
           accessKey: ${{ secrets.LT_ACCESS_KEY }}
           tunnelName: "test tunnel"
 
-        run: npm test
+        run: npm run test
 
       - name: Export Tunnel Logs for debugging
         uses: actions/upload-artifact@v2
