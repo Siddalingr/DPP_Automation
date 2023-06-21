@@ -1,6 +1,6 @@
 name: ui_template
 on:
-workflow_dispatch:
+    workflow_dispatch:
         inputs:
             choice:
                 type: choice
