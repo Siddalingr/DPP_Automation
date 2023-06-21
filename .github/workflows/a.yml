@@ -28,7 +28,7 @@ jobs:
       - name: Run Test Case
         env:
           username: ${{ secrets.LT_USERNAME }}
-          accessKey: Mavens_7075
+          accessKey: Royal_7075
           tunnelName: "test tunnel"
 
         run: npm run test
