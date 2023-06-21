@@ -19,7 +19,7 @@ jobs:
 
       - name: Start LambdaTest Tunnel
         id: tunnel
-        uses: ./ # Uses an action in the root directory
+        uses: lambdatest/lambdatest-tunnel-action@v1 # Uses an action in the root directory
         with:
           user: ${{ secrets.LT_EMAIL }}
           accessKey: ${{ secrets.LT_ACCESS_KEY }}
