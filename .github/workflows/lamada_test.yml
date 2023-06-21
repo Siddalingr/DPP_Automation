@@ -21,18 +21,17 @@ jobs:
         id: tunnel
         uses: LambdaTest/LambdaTest-tunnel-action@v1
         with:
-          user: LT_EMAIL
-          accessKey: Royal_7075
-          tunnelName: "test tunnel"
-          tunnelArgs: "--port 33429" 
-
+         user: LT_EMAIL
+         accessKey: Mavens_7075
+         tunnelName: "test tunnel"
+         tunnelArgs: "--port 33429"
+         
       - name: Run Test Case
         env:
-          username: LT_ACCESS_KEY
-          accessKey: Royal_7075
-          tunnelName: "test tunnel"
-
-        run: npm run test
+         LT_USERNAME: LT_ACCESS_KEY
+         LT_ACCESS_KEY: Royal_7075
+         LT_TUNNEL_NAME: "test tunnel"
+         run: npm run test
 
       - name: Export Tunnel Logs for debugging
         uses: actions/upload-artifact@v2
