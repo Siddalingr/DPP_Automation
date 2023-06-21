@@ -31,6 +31,13 @@ exports.config = {
   exclude: [
     // 'path/to/excluded/files'
   ],
+  suites: {
+		full_suite: ['./test/specs/**/*.js'],
+		//Path for Suite 1
+		suite1: ['./test/specs/**/*.js'],
+		//Path for Suite 2
+		suite2: ['./test/specs/**/*.js'],
+	},
   //
   // ============
   // Capabilities
