@@ -1,6 +1,7 @@
 name: Test Tunnel
 
-on: push
+on:
+    workflow_dispatch:
 
 jobs:
   test-tunnel:
