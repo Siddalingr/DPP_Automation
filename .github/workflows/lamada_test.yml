@@ -24,6 +24,7 @@ jobs:
           user: LT_EMAIL
           accessKey: Royal_7075
           tunnelName: "test tunnel"
+          tunnelArgs: "--port 33429" 
 
       - name: Run Test Case
         env:
