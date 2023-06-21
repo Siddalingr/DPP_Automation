@@ -14,7 +14,8 @@ jobs:
       - name: Install Node.js, NPM and Yarn
         uses: actions/setup-node@v1
         with:
-          node-version: 18.12.1
+          node-version: 18.16.0
+      - run: npm install yarn
       - run: npm install
 
       - name: Start LambdaTest Tunnel
