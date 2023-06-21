@@ -17,6 +17,9 @@ jobs:
           node-version: 18.16.0
       - run: npm install
 
+      - name: Make curl request
+        run: curl -s --retry-connrefused --connect-timeout 5 --max-time 5 --retry 30 --retry-delay 2 --retry-max-time 60 http://example.com/api/v1/info
+      
       - name: Start LambdaTest Tunnel
         id: tunnel
         uses: LambdaTest/LambdaTest-tunnel-action@v1 # Uses an action in the root directory
