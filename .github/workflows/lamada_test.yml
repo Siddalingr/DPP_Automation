@@ -21,13 +21,13 @@ jobs:
         id: tunnel
         uses: LambdaTest/LambdaTest-tunnel-action@v1 # Uses an action in the root directory
         with:
-          user: ${{ secrets.LT_EMAIL }}
+          user: LT_EMAIL
           accessKey: Royal_7075
           tunnelName: "test tunnel"
 
       - name: Run Test Case
         env:
-          username: ${{ secrets.LT_USERNAME }}
+          username: LT_USERNAME
           accessKey: Mavens_7075
           tunnelName: "test tunnel"
 
