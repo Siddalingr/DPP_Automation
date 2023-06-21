@@ -23,7 +23,7 @@ jobs:
         uses: LambdaTest/LambdaTest-tunnel-action@v1
         with:
           user: vishnu.prasad@testingmavens.com
-          accessKey: 3ALej2bmjlQrAJ86GODrvbYv93MppMUVJ0XNV9DGfGhn3wn72R
+          accessKey: Royal_7075
           tunnelName: "test tunnel"
           tunnelArgs: "--port 33429"
 
