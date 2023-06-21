@@ -23,14 +23,14 @@ jobs:
         uses: LambdaTest/LambdaTest-tunnel-action@v1
         with:
           user: vishnu.prasad@testingmavens.com
-          accessKey: Royal_7075
+          accessKey: 3ALej2bmjlQrAJ86GODrvbYv93MppMUVJ0XNV9DGfGhn3wn72R
           tunnelName: "test tunnel"
           tunnelArgs: "--port 33429"
 
       - name: Run Test Case
         env:
           LT_USERNAME: Royal_7075
-          LT_ACCESS_KEY: Royal_7075
+          LT_ACCESS_KEY: Mavens_7075
           LT_TUNNEL_NAME: "test tunnel"
         run: npm run test
 
