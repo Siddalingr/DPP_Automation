@@ -1,4 +1,4 @@
-name: Test Tunnel
+name: Lamda Test Tunnel
 
 on:
     workflow_dispatch:
