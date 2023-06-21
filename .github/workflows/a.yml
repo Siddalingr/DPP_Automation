@@ -22,14 +22,16 @@ jobs:
         run: curl -s --retry-connrefused --connect-timeout 5 --max-time 5 --retry 30 --retry-delay 2 --retry-max-time 60 http://example.com/api/v1/info
       
       - name: Start LambdaTest Tunnel
+        if: always()
         id: tunnel
         uses: LambdaTest/LambdaTest-tunnel-action@v1 # Uses an action in the root directory
         with:
           user: ${{ secrets.LT_EMAIL }}
           accessKey: ${{ secrets.LT_ACCESS_KEY }}
           tunnelName: "test tunnel"
-
+        
       - name: Run Test Case
+        if: always()
         env:
           username: ${{ secrets.LT_USERNAME }}
           accessKey: ${{ secrets.LT_ACCESS_KEY }}
