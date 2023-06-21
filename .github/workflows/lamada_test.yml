@@ -30,7 +30,7 @@ jobs:
       - name: Run Test Case
         env:
           LT_USERNAME: Royal_7075
-          LT_ACCESS_KEY: Mavens_7075
+          LT_ACCESS_KEY: Royal_7075
           LT_TUNNEL_NAME: "test tunnel"
         run: npm run test
 
