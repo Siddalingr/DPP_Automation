@@ -1,4 +1,4 @@
-const { homePage } = require("../pageobjects/home_page"); //Importing Homepage object
+const { homePage } = require("../pageobjects/homePage"); //Importing Homepage object
 
 describe('Work flow for Make my trip', () => {
 	it('User should be able to load url', async () => {
