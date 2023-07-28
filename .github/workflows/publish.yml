@@ -1,4 +1,4 @@
-name: ui_test_runner
+name: ui_test_runner_gp
 run-name: UI functional tests ran by @${{ github.actor }} - run number ${{ github.run_number }}
 on:
     workflow_dispatch:
