@@ -6,7 +6,7 @@ const tmpFilesPath = path.resolve('./test/.artifacts');
 
 const downloadsFolder = path.resolve(tmpFilesPath, 'downloads');
 
-config.services = ['selenium-standalone'];
+config.services = ['edgedriver'];
 
 config.capabilities = [
 	{
