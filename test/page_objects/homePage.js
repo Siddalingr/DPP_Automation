@@ -20,7 +20,7 @@ class Homepage extends Commom {
  */
 async startUps(menu, name) {
 	await this.$topNavigationBar(menu).moveTo(47, 39);
-	await browser.pause(1000);
+	await browser.pause(3000);
 	await this.$startups(name).click();
 }
 
@@ -31,7 +31,7 @@ async startUps(menu, name) {
  */
 async fineTech(menu, name) {
 	await this.$topNavigationBar(menu).moveTo(47, 39);
-	await browser.pause(1000);
+	await browser.pause(3000);
 	await this.$fineTech(name).click();
 }
 }
