@@ -1,5 +1,4 @@
 const Commom = require("./common");
-
 class Homepage extends Commom {
 	constructor() {
 		super();
