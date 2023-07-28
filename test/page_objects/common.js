@@ -6,7 +6,7 @@ class Common {
 		/**
 		 * Elements
 		 */
-		this.$pageHeader = title => $(`//a[text()="${title}"]`);
+		this.$pageHeader = title => $(`//div[contains(text(),'${title}')]`);
 	}
 
 

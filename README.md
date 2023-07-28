@@ -15,7 +15,7 @@ Clone the project
 
 ```
 
-git clone https://github.com/kpmg-us/{Project name}
+git clone https://github.com/testingmavens/ui_automation_template_repository.git
 
 ```
 
@@ -53,7 +53,7 @@ To run the workflow from actions tab
 
 ```
 
-Go to the link https://github.com/kpmg-us/{{Project name}}
+Go to the link https://github.com/testingmavens/ui_automation_template_repository.git
 
 ```
 
