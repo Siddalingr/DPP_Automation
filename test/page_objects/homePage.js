@@ -4,9 +4,7 @@ class Homepage extends Commom {
 	constructor() {
 		super();
 		this.$homePageHeader = (header) =>  $(`//h1[contains(text(),'${header}')]`);
-		this.$topNavigationBar = (menu) => $(`//div[contains(text(),'${menu}')]`);
-		this.$startups = (name) => $(`//div[contains(text(),'${name}')]`);
-		this.$fineTech = (name) => $(`(//a[text()="${name}"])[2]`);
+		this.$topNavigationBar = (menu) => $(`//div[@class="navbar-link-wrapper"]//a[contains(text(),'${menu}')]`);
 	}
 
 /**
@@ -14,25 +12,15 @@ class Homepage extends Commom {
 */
 
 /**
- * Method to Click on StartUps
- * @param {String} menu 
- * @param {String} name 
+ * Method to click on Get Started
+ * @param {String} name Name of the Navigation Icon
+ * @param {String} header 
  */
-async startUps(menu, name) {
-	await this.$topNavigationBar(menu).moveTo(47, 39);
-	await browser.pause(3000);
-	await this.$startups(name).click();
+async getStarted(name,header){
+	await this.$topNavigationBar(name).click();
+	await this.$homePageHeader(header).waitForDisplayed({timeout: 30000, timeoutMsg: `Header still not displayed`});
+
 }
 
-/**
- * Method to click on FineTech
- * @param {String} menu 
- * @param {String} name 
- */
-async fineTech(menu, name) {
-	await this.$topNavigationBar(menu).moveTo(47, 39);
-	await browser.pause(3000);
-	await this.$fineTech(name).click();
-}
 }
 module.exports = new Homepage();
