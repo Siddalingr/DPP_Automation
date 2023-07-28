@@ -34,10 +34,11 @@ npm i
 To run the script 
 
 ```
-
-npm run test - To Run the Script in Chrome Browser
-
-npm run testEdge - To Run the Script in Edge Browser
+To Run the Script in Chrome Browser
+npm run test 
+ 
+To Run the Script in Edge Browser
+npm run testEdge 
 
 ```
 
