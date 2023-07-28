@@ -59,7 +59,7 @@ Go to the link https://github.com/testingmavens/ui_automation_template_repositor
 
 -   Click on Action tab ![action_tab](./assets/actions.png)
 
--   Click on "WebdriverIO CI" ![WebdriverIO_CI](./assets/select_workflow.png)
+-   Click on "ui_template" ![WebdriverIO_CI](./assets/select_workflow.png)
 
 -   Click on Run workflow dropdown ![run_workflow](./assets/run_workflow.png)
 
