@@ -73,7 +73,7 @@ Go to the link https://github.com/testingmavens/ui_automation_template_repositor
 
 -   Make sure the execution is Completed by checking the execution status ![status](./assets/execution_status.png)
 
--   Open the completed task by clicking on it and Click on "**Allure report**" zip file under "**Artifacts**" at the end of the run summary page to download the Report : ![report](./assets/runreport.png)
+-   Open the completed task by clicking on it and Click on "**Allure report**" zip file under "**Artifacts**" at the end of the run summary page to download the Report : ![report](./assets/run_report.png)
 
 -   Unzip the downloaded "**Allure report.zip**" and open the "_complete.html_" to view
     the run report. ![final_report](./assets/final_report.png)
